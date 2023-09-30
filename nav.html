@@ -1,7 +1,7 @@
 <nav id="main_nav">
   <div class="nav_top">
     <div class="brand_box">
-      <a href="/"><img class="logo_img" src="./img/logo.png" /></a>
+      <a href="../"><img class="logo_img" src="./img/logo.png" /></a>
     </div>
     <div class="create_box">
       <button id="create_new_btn"><i class="fa-solid fa-plus"></i>Create New</span></button>
@@ -14,15 +14,15 @@
       <li class="nav_button"><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
       <hr />
       <li class="nav_button"><a href="#"><i class="fa-solid fa-user"></i>Account</a></li>
-      <li class="nav_button"><a href="/login.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+      <li class="nav_button"><a href="../login.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
     </ul>
   </div>
 </nav>
 
 <script>
   createnew = document.getElementById('create_new_btn').addEventListener('click', (e) => {
-    if (window.location != "/create.html") {
-      window.location = "/create.html";
+    if (window.location != "../create.html") {
+      window.location = "../create.html";
     }
 
     e.preventDefault();
