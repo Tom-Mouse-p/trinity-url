@@ -1,0 +1,61 @@
+@import url("style.css");
+
+.centered {
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo > img {
+    width: 200px;
+}
+
+.login_container {
+    width: 300px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: var(--color_primary) solid 1px;
+    /* box-shadow: 0px 0px 10px 0px var(--color_primary); */
+}
+
+h1 {
+    text-align: center;
+    color: var(--color_primary);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    /* font-weight: bold; */
+}
+
+.form-group > input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color_primary);
+    outline: none;
+    border-radius: 3px;
+}
+
+.form-group > input:focus {
+    outline: 2px solid var(--color_primary);
+}
+
+.form-group button {
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid var(--color_primary);
+    border-radius: 5px;
+    cursor: pointer;
+}

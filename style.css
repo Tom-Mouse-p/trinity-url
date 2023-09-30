@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+html {
+    height: 50%;
+    width: 50%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --nav_width: 30vw;
+    --nav_width_max: 280px;
+    --color_primary: #3d14c1;
+}
+
+#main_nav {
+    background-color: var(--color_primary);
+    width: min(var(--nav_width), var(--nav_width_max));
+    /* max-width: var(--nav_width_max); */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+}
+
+.brand_box {
+    padding: 1rem;
+}
+
+.create_box {
+    display: flex;
+    align-items: center;
+}
+
+.create_box > button {
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--color_primary);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+.nav_holder {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav_holder > li {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav_button:hover {
+    background-color: inherit;
+}
+
+.nav_button > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav_button > a > i {
+    width: 20px;
+    height: 20px;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+#main_page {
+    width: calc(100vw - var(--nav_width));
+    margin-left: min(var(--nav_width), var(--nav_width_max));
+    padding: 1rem;
+}

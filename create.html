@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinity - Create New</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="create.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="includeNAV"></div>
+
+  <main id="main_page" class="center_page">
+    <div class="createbox">
+      <h1>Create URL</h1>
+      <form action="">
+
+        <span id="input_url_box" class="input_box">
+          <label for="inp_url">Url</label>
+          <input type="url" name="" id="inp_url" placeholder="Your URL">
+        </span>
+
+        <span class="input_box">
+          <label for="srt_url">Short URL</label>
+          <span>
+            <select name="" id="" disabled>
+              <option value="trinity">trinity.com/</option>
+              <!-- <option value="trinity">trinityurl.com/</option> -->
+            </select>
+            <input type="text" name="" id="srt_url" placeholder="Short URL">
+          </span>
+        </span>
+
+        <span class="input_box">
+          <label for="srt_url">Duration</label>
+          <select name="" id="">
+            <option value="2hr">2 Hr</option>
+            <option value="12 hr">12 Hr</option>
+            <option value="1 day">1 day</option>
+            <option value="1 week">1 week</option>
+            <option value="1 month">1 Month</option>
+            <option value="NO">Do Not Expire</option>
+          </select>
+          <!-- <input type="text" name="" id="srt_url" placeholder="Short URL"> -->
+        </span>
+
+        <div class="input_box">
+          <input type="submit" name="" id="inp_url" value="Create URL">
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#includeNAV").load("nav.html");
+    });
+  </script>
+
+</body>
+
+</html>

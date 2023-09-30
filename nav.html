@@ -1,0 +1,34 @@
+<nav id="main_nav">
+  <div class="nav_top">
+    <div class="brand_box">
+      <a href="/"><img class="logo_img" src="./img/logo.png" /></a>
+    </div>
+    <div class="create_box">
+      <button id="create_new_btn"><i class="fa-solid fa-plus"></i>Create New</span></button>
+    </div>
+  </div>
+  <div class="nav_bar">
+    <ul class="nav_holder">
+      <li class="nav_button"><a href="#"><i class="fa-solid fa-chart-line"></i>Dashboard</span></a></li>
+      <li class="nav_button"><a href="#"><i class="fa-solid fa-link"></i>Your Links</a></li>
+      <li class="nav_button"><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+      <hr />
+      <li class="nav_button"><a href="#"><i class="fa-solid fa-user"></i>Account</a></li>
+      <li class="nav_button"><a href="/login.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  createnew = document.getElementById('create_new_btn').addEventListener('click', (e) => {
+    if (window.location != "/create.html") {
+      window.location = "/create.html";
+    }
+
+    e.preventDefault();
+  })
+
+</script>
+
+<!-- icon imports -->
+<script src="https://kit.fontawesome.com/d7f91341a0.js" crossorigin="anonymous"></script>
